@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Be My Valentine 💘</title>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      margin-top: 80px;
+      color: #7a0019;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 12px 30px;
+      margin: 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    #yes {
+      background-color: #ff3366;
+      color: white;
+    }
+
+    #no {
+      background-color: #ffffff;
+      color: #555;
+    }
+
+    #message {
+      font-size: 26px;
+      margin-top: 30px;
+      color: #b3003b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Romantic Music -->
+  <audio id="loveSong" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_5a42eacb29.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1>Hey my Kit Kit ❤️</h1>
+
+  <p>
+    I don’t know how to say this in fancy words,<br>
+    but my heart feels calmer, happier,<br>
+    and more alive when you’re around.
+    <br><br>
+    So I coded this instead…
+  </p>
+
+  <h1>Will you be my Valentine? 💘</h1>
+
+  <button id="yes" onclick="yesAnswer()">YES 💕</button>
+  <button id="no" onclick="noAnswer()">NO 🙈</button>
+
+  <div id="message"></div>
+
+  <script>
+    function yesAnswer() {
+      document.getElementById("loveSong").play();
+      document.getElementById("message").innerHTML =
+        "YAYYYY ❤️<br>You just made my heart the happiest 💖<br>Asking you a little early ❤️, my Kit Kit 💘";
+    }
+
+    function noAnswer() {
+      alert("Please don’t break my code… or my heart 🥺❤️");
+    }
+  </script>
+
+</body>
+</html>
